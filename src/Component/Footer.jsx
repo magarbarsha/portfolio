@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/magarbarsha"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-blue-600 transition-colors"

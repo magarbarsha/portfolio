@@ -1,0 +1,93 @@
+.contact-section {
+    text-align: center;
+    background-color: white;
+    color: rgb(21, 17, 17);
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(26, 27, 28);
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-bottom: 30px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .contact-item {
+    text-align: center;
+    flex: 1 1 250px;
+    min-width: 250px;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    width: 70px; /* Adjust size of icon container */
+    height: 70px; /* Adjust size of icon container */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem; /* Icon size */
+    color: rgb(0, 85, 255); /* Icon color */
+  }
+  
+  .icon-container:hover {
+    transform: scale(1.1);
+    background-color: rgb(191, 194, 200);
+    color: white;
+  }
+  
+  .resume-link {
+    color: rgb(19, 20, 21);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resume-link:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-footer {
+    margin-top: 30px;
+  }
+  
+  .contact-btn {
+    margin-top: 10px;
+    background-color: rgb(0, 85, 255);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #333;
+  }
+  

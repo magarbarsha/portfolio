@@ -1,34 +1,31 @@
 import React from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import Navbar from "../Component/Navbar";
-import { FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi"; // Icons for social links
+import { FiGithub, FiLinkedin, FiFacebook, FiBriefcase, FiCheckCircle, FiSmile } from "react-icons/fi"; // Added FiSmile for new stat
 import About from "./About";
 import Footer from "../Component/Footer";
 import Projects from "./Projects";
-// import Skills from "./Skill";
+import Contact from "./Contact";
+import Skills from "./Skill";
 
 const Home = () => {
   const [scope, animate] = useAnimate();
 
-  // Animation variants for staggered text
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
 
-  // Animation for the photo
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.8, delay: 0.5 } },
   };
 
-  // Animation for the CTA button
   const buttonVariants = {
-    hover: { scale: 1.05, backgroundColor: "#2563EB" }, // Darker blue on hover
+    hover: { scale: 1.05, backgroundColor: "#2563EB" },
     tap: { scale: 0.95 },
   };
 
-  // Staggered animation for text elements
   React.useEffect(() => {
     animate(
       ".text-element",
@@ -42,13 +39,11 @@ const Home = () => {
       <Navbar />
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-400 text-gray-800 pt-20" // Added pt-20 for padding-top
+        className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-400 text-gray-800 pt-20"
         ref={scope}
       >
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
-          {/* Left Side: Text Content */}
           <div className="text-center lg:text-left lg:w-1/2">
-            {/* Animated Heading */}
             <motion.h1
               className="text-2xl lg:text-6xl font-bold mb-4 text-element"
               initial="hidden"
@@ -57,8 +52,6 @@ const Home = () => {
             >
               Hi, I'm <span className="text-blue-600">Barsha Magar</span>
             </motion.h1>
-
-            {/* Animated Tagline */}
             <motion.h2
               className="text-2xl lg:text-3xl font-semibold mb-6 text-element"
               initial="hidden"
@@ -67,8 +60,6 @@ const Home = () => {
             >
               Full-Stack Developer | React Enthusiast
             </motion.h2>
-
-            {/* Animated Paragraph */}
             <motion.p
               className="text-lg lg:text-xl mb-8 text-gray-700 text-element"
               initial="hidden"
@@ -78,9 +69,9 @@ const Home = () => {
               I build scalable, user-friendly web applications that solve real-world problems. Let's create something amazing together!
             </motion.p>
 
-            {/* Buttons: Download CV and Contact Me */}
+            {/* Buttons: Download CV, Contact Me, Experience, Projects */}
             <motion.div
-              className="flex space-x-4 mb-8 text-element"
+              className="flex flex-wrap gap-4 mb-8 text-element"
               initial="hidden"
               animate="visible"
               variants={textVariants}
@@ -104,6 +95,7 @@ const Home = () => {
               >
                 Contact Me
               </motion.a>
+              
             </motion.div>
 
             {/* Social Links: LinkedIn, GitHub, Facebook */}
@@ -138,16 +130,6 @@ const Home = () => {
                 <FiFacebook size={24} />
               </a>
             </motion.div>
-
-            {/* Additional Links */}
-            <motion.div
-              className="flex space-x-6 text-element"
-              initial="hidden"
-              animate="visible"
-              variants={textVariants}
-            >
-
-            </motion.div>
           </div>
 
           {/* Right Side: Professional Photo */}
@@ -167,10 +149,36 @@ const Home = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Stats Section */}
+        <div className="container mx-auto mt-12 flex flex-wrap justify-center gap-8">
+          <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
+            <FiBriefcase className="text-blue-600" size={36} />
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">8 Years Job</h3>
+              <p className="text-gray-600">Experience</p>
+            </div>
+          </div>
+          <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
+            <FiCheckCircle className="text-blue-600" size={36} />
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">500+ Projects</h3>
+              <p className="text-gray-600">Completed</p>
+            </div>
+          </div>
+          <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
+            <FiSmile className="text-blue-600" size={36} />
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">200+</h3>
+              <p className="text-gray-600">Happy Clients</p>
+            </div>
+          </div>
+        </div>
       </section>
       <About />
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
+      <Contact />
       <Footer />
     </>
   );
