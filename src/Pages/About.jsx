@@ -35,7 +35,7 @@ const About = () => {
             <div>
               <h3 className="text-xl font-semibold text-blue-700 mb-3">Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {["JavaScript", "React", "Node.js", "Python", "SQL"].map((skill, index) => (
+                {["JavaScript", "React", "Node.js", "PHP", "SQL"].map((skill, index) => (
                   <span key={index} className="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-lg shadow-sm">
                     {skill}
                   </span>

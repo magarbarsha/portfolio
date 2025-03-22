@@ -8,7 +8,9 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Skills from "./Skill";
 
+
 const Home = () => {
+
   const [scope, animate] = useAnimate();
 
   const textVariants = {
@@ -42,7 +44,7 @@ const Home = () => {
         className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-400 text-gray-800 pt-20"
         ref={scope}
       >
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <div className="container mt-10 mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
           <div className="text-center lg:text-left lg:w-1/2">
             <motion.h1
               className="text-2xl lg:text-6xl font-bold mb-4 text-element"
@@ -176,7 +178,7 @@ const Home = () => {
         </div>
       </section>
       <About />
-      <Projects />
+        <Projects  />
       <Skills />
       <Contact />
       <Footer />

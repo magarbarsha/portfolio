@@ -8,42 +8,24 @@ const projectsData = [
     id: 1,
     title: "Portfolio Website",
     description: "A personal portfolio website built with React and Tailwind CSS.",
-    image: "./src/assets/portfolio.jpg", // Replace with your image path
+    image: "./src/assets/port.jpeg", // Replace with your image path
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     category: "Web Apps",
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/magarbarsha",
     demo: "https://yourportfolio.com",
   },
   {
     id: 2,
-    title: "E-Commerce App",
-    description: "A full-stack e-commerce application built with React and Node.js.",
-    image: "./src/assets/ecommerce.jpg", // Replace with your image path
+    title: "E-Commerce Website",
+    description: "A full-stack e-commerce website built with React and Node.js.",
+    image: "./src/assets/ecommerce.jpeg", // Replace with your image path
     technologies: ["React", "Node.js", "MongoDB"],
     category: "Web Apps",
-    github: "https://github.com/yourusername/ecommerce",
+    github: "https://github.com/magarbarsha",
     demo: "https://ecommerceapp.com",
   },
-  {
-    id: 3,
-    title: "Task Manager",
-    description: "A mobile task manager app built with React Native.",
-    image: "./src/assets/taskmanager.jpg", // Replace with your image path
-    technologies: ["React Native", "Firebase"],
-    category: "Mobile Apps",
-    github: "https://github.com/yourusername/taskmanager",
-    demo: "https://taskmanagerapp.com",
-  },
-  {
-    id: 4,
-    title: "Open Source Contribution",
-    description: "Contributed to an open-source project on GitHub.",
-    image: "./src/assets/opensource.jpg", // Replace with your image path
-    technologies: ["Git", "GitHub"],
-    category: "Open Source",
-    github: "https://github.com/yourusername/opensource",
-    demo: "https://opensourceproject.com",
-  },
+ 
+
 ];
 
 const Projects = () => {

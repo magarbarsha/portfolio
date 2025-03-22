@@ -1,9 +1,12 @@
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaDownload } from "react-icons/fa"; 
 import "../Css/Contact.css"; 
+import Navbar from "../Component/Navbar";
 
 const Contact = () => {
   return (
+    <>
+    <Navbar />
     <section className="contact-section">
       <h2 className="contact-title">Contact Me</h2>
       <p className="contact-subtitle">Below are the details to reach out to me!</p>
@@ -47,7 +50,8 @@ const Contact = () => {
         <button className="contact-btn">CLICK HERE</button>
       </div>
     </section>
-  );
+    </>
+  )
 };
 
 export default Contact;
