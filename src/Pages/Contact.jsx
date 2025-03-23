@@ -41,7 +41,7 @@ const Contact = () => {
             <FaDownload className="contact-icon" />
           </div>
           <h3>DOWNLOAD RESUME</h3>
-          <a href="resumelink" className="resume-link">resumelink</a>
+          <a href="/Resume" className="resume-link">resumelink</a>
         </div>
       </div>
 

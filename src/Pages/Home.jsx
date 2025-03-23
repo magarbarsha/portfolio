@@ -4,9 +4,11 @@ import Navbar from "../Component/Navbar";
 import { FiGithub, FiLinkedin, FiFacebook, FiBriefcase, FiCheckCircle, FiSmile } from "react-icons/fi"; // Added FiSmile for new stat
 import About from "./About";
 import Footer from "../Component/Footer";
+import barsha from '../assets/barsha.jpg'
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Skills from "./Skill";
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -78,8 +80,8 @@ const Home = () => {
               animate="visible"
               variants={textVariants}
             >
-              <motion.a
-                href="/path-to-your-cv.pdf"
+              <motion.Link
+                to="/Resume"
                 download
                 className="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors"
                 whileHover="hover"
@@ -87,16 +89,16 @@ const Home = () => {
                 variants={buttonVariants}
               >
                 Download CV
-              </motion.a>
-              <motion.a
-                href="#contact"
+              </motion.Link>
+              <motion.Link
+                href="/Contact"
                 className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-colors"
                 whileHover="hover"
                 whileTap="tap"
                 variants={buttonVariants}
               >
                 Contact Me
-              </motion.a>
+              </motion.Link>
               
             </motion.div>
 
@@ -143,7 +145,7 @@ const Home = () => {
           >
             <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-blue-500 hover:border-purple-500 transition-all shadow-2xl">
               <img
-                src="./src/assets/barsha.jpg" // Replace with your photo URL
+                src={barsha} // Replace with your photo URL
                 alt="Professional Photo"
                 className="w-full h-full object-cover"
               />
@@ -157,7 +159,7 @@ const Home = () => {
           <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
             <FiBriefcase className="text-blue-600" size={36} />
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">8 Years Job</h3>
+              <h3 className="text-xl font-semibold text-gray-900">1 Years Job</h3>
               <p className="text-gray-600">Experience</p>
             </div>
           </div>

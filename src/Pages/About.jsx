@@ -57,7 +57,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-base">
                   <FiMapPin className="text-blue-600" size={20} />
-                  <p className="font-medium">San Francisco, CA</p>
+                  <p className="font-medium">Madhumalla, Morang</p>
                 </div>
               </div>
             </div>

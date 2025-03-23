@@ -26,7 +26,7 @@ const Skills = () => {
     {
       category: "Backend",
       skills: [
-        { name: "Node.js", icon: <FaNodeJs />, level: 75 },
+        { name: "Node.js", icon: <FaNodeJs />, level: 25 },
         { name: "Database", icon: <FaDatabase />, level: 70 },
       ],
     },
