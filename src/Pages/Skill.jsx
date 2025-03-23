@@ -38,12 +38,12 @@ const Skills = () => {
     },
   ];
 
-  // Certifications
-  const certifications = [
-    "React Certification - Udemy",
-    "JavaScript Certification - Coursera",
-    "Node.js Certification - Udemy",
-  ];
+  // // Certifications
+  // const certifications = [
+  //   "React Certification - Udemy",
+  //   "JavaScript Certification - Coursera",
+  //   "Node.js Certification - Udemy",
+  // ];
 
   return (
     <motion.section
@@ -97,20 +97,7 @@ const Skills = () => {
           ))}
         </motion.div>
 
-        {/* Certifications Section */}
-        <motion.div
-          className="mt-12 bg-white p-6 rounded-lg shadow-lg"
-          variants={fadeIn}
-        >
-          <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
-          <ul className="list-disc list-inside space-y-2">
-            {certifications.map((certification, index) => (
-              <li key={index} className="text-lg text-gray-600">
-                {certification}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+       
       </div>
     </motion.section>
   );

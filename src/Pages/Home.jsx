@@ -164,14 +164,14 @@ const Home = () => {
           <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
             <FiCheckCircle className="text-blue-600" size={36} />
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">500+ Projects</h3>
+              <h3 className="text-xl font-semibold text-gray-900">5+ Projects</h3>
               <p className="text-gray-600">Completed</p>
             </div>
           </div>
           <div className="flex items-center bg-white p-6 rounded-lg shadow-lg space-x-4 border-l-4 border-blue-500 hover:shadow-xl transition">
             <FiSmile className="text-blue-600" size={36} />
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">200+</h3>
+              <h3 className="text-xl font-semibold text-gray-900">2+</h3>
               <p className="text-gray-600">Happy Clients</p>
             </div>
           </div>
