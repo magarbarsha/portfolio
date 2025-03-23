@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FiPhone, FiMail, FiUser, FiMapPin } from "react-icons/fi";
 import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
+import barsha from '../assets/barsha.jpg'
+
 
 const About = () => {
   return (
@@ -14,7 +16,7 @@ const About = () => {
           <div className="relative flex flex-col justify-center items-center h-full space-y-6">
             <div className="relative w-56 h-56 md:w-64 md:h-64 overflow-hidden shadow-lg border-4 border-blue-600 rounded-full transform hover:scale-105 transition-transform duration-300">
               <img
-                src="./src/assets/barsha.jpg"
+                src={barsha}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
